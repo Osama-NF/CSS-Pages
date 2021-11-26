@@ -1,0 +1,48 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --main-bg: hsl(217, 54%, 11%);
+    --container-bg: hsl(216, 50%, 16%);
+    --text: white;
+
+}
+
+body {
+    background-color: var(--main-bg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.main-container {
+    width: 400px;
+    height: 600px;
+    background-color: var(--container-bg);
+    border-radius: 6%;
+    box-shadow: 3px 6px 6px 12px #0c1729;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container img {
+    width: 80%;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 20px; color: var(--text); }
+.attribution a { color: hsl(228, 45%, 44%); }
