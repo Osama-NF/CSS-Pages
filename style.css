@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
 html, body {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
 }
 :root {
     --main-bg: hsl(217, 54%, 11%);
     --container-bg: hsl(216, 50%, 16%);
-    --text: white;
-
+    --text: #7f96b6;
 }
 
 body {
@@ -19,30 +21,55 @@ body {
     flex-direction: column;
 }
 
-
 .main-container {
-    width: 400px;
-    height: 600px;
+    width: 300px;
+    height: 500px;
     background-color: var(--container-bg);
     border-radius: 6%;
     box-shadow: 3px 6px 6px 12px #0c1729;
+    padding: 30px;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 6%;
+}
+
+p, .time-remaining {color: var(--text);}
+
+.flexed-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.main-container img {
-    width: 80%;
-    border-radius: 7px;
+.eth {
+    color: cyan;
+    font-weight: bold;
 }
 
+.creation {
+    border-top: 2px solid var(--text);
+    padding: 10px;
+    margin: 10px;
+    color: var(--text);
+}
 
+.creation img {
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
 
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {color: cyan;}
 
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; margin-top: 20px; color: var(--text); }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    margin-top: 20px;
+    color: white;
+}
+.attribution a { color: hsl(228, 49%, 63%); }
